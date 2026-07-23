@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>신정 노래방 정보 — 동선별 시그널과 실속 팁 | Night Transit Map</title>
+    <meta name="description" content="신정역 주변 노래방을 동선과 특징별로 정리한 실용 정보. 야간 이동 동선, 방음 수준, 주변 편의시설 등 꼭 알아야 할 시그널을 담았습니다.">
+    <meta name="keywords" content="신정 노래방 정보, 신정역 노래방, 야간 노래방 동선, 신정 가라오케 정보">
+    <link rel="canonical" href="https://zone-info-note.gongdeok-club.xyz/sinjeong-info">
+    <meta property="og:title" content="신정 노래방 정보 — 동선별 시그널과 실속 팁">
+    <meta property="og:description" content="신정역을 중심으로 한 노래방 이용에 꼭 필요한 실질적 정보와 동선 팁을 정리했습니다.">
+    <meta property="og:url" content="https://zone-info-note.gongdeok-club.xyz/sinjeong-info">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://zone-info-note.gongdeok-club.xyz/og-sinjeong-info.jpg">
+    <style>
+        :root {
+            --n-color-a1: #334;
+            --n-color-a2: #fff;
+            --n-color-b1: #f0f2f5;
+            --n-color-b2: #6c757d;
+            --n-color-c1: #007bff;
+            --n-color-c2: #fff;
+            --n-font-main: 'Noto Sans KR', sans-serif;
+            --n-font-heading: 'Noto Sans KR', sans-serif;
+            --n-shadow-s: 0 2px 8px rgba(0,0,0,0.1);
+            --n-shadow-m: 0 4px 16px rgba(0,0,0,0.12);
+            --n-radius: 8px;
+            --n-radius-lg: 16px;
+        }
+        body { font-family: var(--n-font-main); background: #f8f9fa; color: var(--n-color-a1); margin: 0; padding: 0; line-height: 1.7; }
+        .n-nav-l2fh-bg { background: var(--n-color-a2); border-bottom: 1px solid var(--n-color-b1); box-shadow: var(--n-shadow-s); position: sticky; top: 0; z-index: 100; }
+        .n-body-zqgu { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0.8rem 1.5rem; }
+        .t-list-afmy { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.5rem; align-items: center; }
+        .t-nav-tvgs a { text-decoration: none; color: var(--n-color-a1); font-weight: 500; transition: color 0.2s; }
+        .t-nav-tvgs a:hover { color: var(--n-color-c1); }
+        .t-foot-mfgz { background: var(--n-color-a1); color: var(--n-color-a2); text-align: center; padding: 2rem 1.5rem; margin-top: 3rem; }
+        .t-foot-mfgz span { display: block; margin-bottom: 0.5rem; }
+        .x-nav-8opd { background: linear-gradient(135deg, #4a00e0 0%, #8e2de2 100%); color: var(--n-color-c2); padding: 4rem 1.5rem; text-align: center; position: relative; overflow: hidden; }
+        .x-nav-8opd::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%); animation: rotate 20s linear infinite; }
+        @keyframes rotate { 100% { transform: rotate(360deg); } }
+        .x-nav-8opd-content { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; }
+        .x-nav-8opd h1 { font-family: var(--n-font-heading); font-size: 2.5rem; margin-bottom: 1rem; line-height: 1.3; }
+        .x-nav-8opd p { font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.9; }
+        .section { max-width: 1200px; margin: 3rem auto; padding: 0 1.5rem; }
+        .section h2 { font-family: var(--n-font-heading); font-size: 1.8rem; color: var(--n-color-a1); margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--n-color-c1); display: inline-block; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .info-card { background: var(--n-color-a2); border-radius: var(--n-radius-lg); box-shadow: var(--n-shadow-s); padding: 1.5rem; transition: transform 0.2s, box-shadow 0.2s; }
+        .info-card:hover { transform: translateY(-5px); box-shadow: var(--n-shadow-m); }
+        .info-card h3 { color: var(--n-color-c1); font-size: 1.3rem; margin-top: 0; }
+        .info-card p { color: var(--n-color-b2); font-size: 0.95rem; }
+        .route-map { background: var(--n-color-b1); border-radius: var(--n-radius-lg); padding: 2rem; margin-top: 2rem; }
+        .route-map h3 { font-size: 1.2rem; margin-top: 0; }
+        .route-line { display: flex; align-items: center; margin-bottom: 1rem; }
+        .route-dot { width: 12px; height: 12px; background: var(--n-color-c1); border-radius: 50%; margin-right: 1rem; flex-shrink: 0; }
+        .route-text { background: var(--n-color-a2); padding: 0.5rem 1rem; border-radius: var(--n-radius); box-shadow: var(--n-shadow-s); flex-grow: 1; }
+        .tips-list { list-style: none; padding: 0; }
+        .tips-list li { padding: 1rem; margin-bottom: 0.5rem; background: var(--n-color-b1); border-radius: var(--n-radius); border-left: 4px solid var(--n-color-c1); }
+        .tips-list li strong { color: var(--n-color-c1); }
+        .faq-item { background: var(--n-color-a2); border-radius: var(--n-radius-lg); box-shadow: var(--n-shadow-s); margin-bottom: 1rem; padding: 1.5rem; }
+        .faq-item h4 { color: var(--n-color-c1); margin-top: 0; font-size: 1.1rem; }
+        .cta-button { display: inline-block; background: var(--n-color-c1); color: var(--n-color-c2); padding: 0.8rem 1.5rem; border-radius: var(--n-radius); text-decoration: none; font-weight: 500; margin-top: 1rem; transition: background 0.2s; }
+        .cta-button:hover { background: #0056b3; }
+        .mobile-menu { display: none; }
+        @media (max-width: 768px) {
+            .t-list-afmy { display: none; }
+            .mobile-menu { display: block; font-size: 1.5rem; cursor: pointer; }
+            .x-nav-8opd h1 { font-size: 2rem; }
+            .info-grid { grid-template-columns: 1fr; }
+            .route-line { flex-direction: column; align-items: flex-start; }
+            .route-dot { margin-bottom: 0.5rem; }
+            .route-text { width: 100%; margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="n-nav-l2fh-bg">
+        <div class="n-body-zqgu">
+            <div style="font-weight: bold; font-size: 1.2rem;">신정 가이드</div>
+            <ul class="t-list-afmy">
+                <li class="t-nav-tvgs"><a href="https://zone-info-note.gongdeok-club.xyz/">추천</a></li>
+                <li class="t-nav-tvgs"><a href="#">정보 (현재)</a></li>
+                <li class="t-nav-tvgs"><a href="#">팁</a></li>
+            </ul>
+            <div class="mobile-menu">☰</div>
+        </div>
+    </nav>
+
+    <header class="x-nav-8opd">
+        <div class="x-nav-8opd-content">
+            <h1>신정 노래방, 동선으로 읽는 핵심 정보</h1>
+            <p>단순 목록이 아닌, 실제 이용 시 꼭 알아야 할 지역의 시그널들을 정리했어요.</p>
+            <a href="#info-map" class="cta-button">지도처럼 확인하기</a>
+        </div>
+    </header>
+
+    <main class="section" id="info-map">
+        <h2>📍 핵심 시그널 카드</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>🌙 야간 이동성</h3>
+                <p>신정역 1, 3번 출구 근처가 활성화되어 있어요. 심야 시간대 택시가 잘 잡히는 '승강장 지점'을 알아두면 좋아요.</p>
+            </div>
+            <div class="info-card">
+                <h3>🔇 방음·소음 지도</h3>
+                <p>건물 형태에 따라 차이가 크답니다. 지상 저층보다는 지하나 상층부의 방음이 상대적으로 나은 편이에요.</p>
+            </div>
+            <div class="info-card">
+                <h3>🅿️ 주변 편의</h3>
+                <p>식당, 편의점, 카페 등이 혼재해 있어 '원스톱 야간 활동'이 가능합니다. 하지만 주차장은 넉넉하지 않아요.</p>
+            </div>
+        </div>
+
+        <div class="route-map">
+            <h3>🚶 이 동선으로 보세요: 신정역 → 노래방</h3>
+            <div class="route-line">
+                <div class="route-dot"></div>
+                <div class="route-text"><strong>1번 출구 방면:</strong> 대로변 건물. 간판이 화려하고 접근성이 좋아 초보자에게 적합해요.</div>
+            </div>
+            <div class="route-line">
+                <div class="route-dot"></div>
+                <div class="route-text"><strong>3번 출구 방면:</strong> 골목 상가. 조금 더 조용하고 주민들이 이용하는 곳들이 많아요.</div>
+            </div>
+            <div class="route-line">
+                <div class="route-dot"></div>
+                <div class="route-text"><strong>역 뒤편 주택가:</strong> 간판이 작고 찾기 어렵지만, 소규모 프라이빗한 공간이 숨어있는 경우가 있어요.</div>
+            </div>
+        </div>
+
+        <h2>💡 지역 내 주의사항 & 꿀팁</h2>
+        <ul class="tips-list">
+            <li><strong>예약 꿀팁:</strong> 금요일 저녁에는 전화 예약이 필수예요. '2시간 세트' 예약이 가장 효율적.</li>
+            <li><strong>방 선택:</strong> 혼자 오거나 두 명이면 '소형방'을, 인원 많으면 '대형방'을 요구하세요. 음향 시스템 차이가 있어요.</li>
+            <li><strong>가격 힌트:</strong> '신정역 5분 거리'라는 표현이 많아요. 이는 도보 이동 가능성을 강조하는 신호랍니다.</li>
+            <li><strong>야간 귀가:</strong> 12시 이후에는 대중교통이 끊기기 때문에 귀가 방식을 미리 정해두세요.</li>
+            <li><strong>지역 특징:</strong> 주택가와 상업지역이 섞여 있어, 노래방 소리가 주택가에 미치지 않도록 운영하는 곳이 많아요.</li>
+        </ul>
+
+        <h2>❓ 자주 묻는 질문 (지역 편)</h2>
+        <div class="faq-item">
+            <h4>신정역에서 걸어서 얼마나 걸리나요?</h4>
+            <p>대부분 1~5분 거리에 있어요. '역세권'이 확실하죠. 다만 골목길이 있을 수 있어요.</p>
+        </div>
+        <div class="faq-item">
+            <h4>혼자 가기 어려운가요?</h4>
+            <p>아뇨, 생각보다 편해요. '1인 특화' 운영을 하거나, 혼자 오는 고객을 배려한 시스템이 있는 곳도 있답니다.</p>
+        </div>
+        <div class="faq-item">
+            <h4>가장 조용한 시간대는?</h4>
+            <p>일요일 오후나 평일 낮 시간대가 비교적 여유롭습니다. 주말 저녁은 비교적 시끄러워요.</p>
+        </div>
+    </main>
+
+    <footer class="t-foot-mfgz">
+        <span>© 2023 신정 노래방 종합 가이드. Night Transit Map.</span>
+        <span>방문객 편의를 위해 객관적 정보를 전달합니다.</span>
+    </footer>
+</body>
+</html>
